@@ -20,12 +20,12 @@
 
     <EditText
         android:id="@+id/email_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
         android:layout_marginTop="62dp"
         android:background="#FFFFFF"
         android:ems="10"
-        android:hint="e-mail"
+        android:hint="nome de usuário"
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColorHint="@color/material_dynamic_neutral50"
@@ -35,8 +35,8 @@
 
     <EditText
         android:id="@+id/password_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
         android:layout_marginTop="26dp"
         android:background="#FFFFFF"
         android:ems="10"
@@ -51,7 +51,7 @@
     <Button
         android:id="@+id/login_btn"
         android:layout_width="154dp"
-        android:layout_height="48dp"
+        android:layout_height="52dp"
         android:layout_marginTop="32dp"
         android:backgroundTint="#E67F24"
         android:paddingLeft="10dp"
@@ -70,7 +70,7 @@
     <Button
         android:id="@+id/register_btn"
         android:layout_width="154dp"
-        android:layout_height="48dp"
+        android:layout_height="52dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#173D77"
         android:paddingLeft="10dp"
