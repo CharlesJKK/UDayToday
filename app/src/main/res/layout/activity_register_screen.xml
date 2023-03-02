@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".registerScreen"
     android:background="@drawable/background_linear"
+    android:gravity="center"
     android:orientation="vertical"
-    android:gravity="center">
+    tools:context=".registerScreen">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_arrow_left" />
 
     <EditText
         android:id="@+id/email_register"
         android:layout_width="264dp"
         android:layout_height="50dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="120dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="e-mail"
@@ -21,13 +32,14 @@
         android:padding="10dp"
         android:textColorHint="@color/material_dynamic_neutral50"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_btn" />
 
     <EditText
         android:id="@+id/username_register"
         android:layout_width="264dp"
         android:layout_height="50dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="16dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="nome de usuário"
@@ -42,7 +54,7 @@
         android:id="@+id/gender_register"
         android:layout_width="264dp"
         android:layout_height="50dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="16dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="gênero"
@@ -57,7 +69,7 @@
         android:id="@+id/password_register"
         android:layout_width="264dp"
         android:layout_height="50dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="16dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="senha"
@@ -66,13 +78,13 @@
         android:textColorHint="@color/material_dynamic_neutral50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_login" />
+        app:layout_constraintTop_toBottomOf="@+id/gender_register" />
 
     <Button
         android:id="@+id/register_btn"
         android:layout_width="154dp"
         android:layout_height="52dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="#173D77"
         android:paddingLeft="10dp"
         android:paddingTop="5dp"
@@ -98,6 +110,8 @@
         android:textColor="#322F2F"
         android:textIsSelectable="false"
         android:textStyle="bold"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
