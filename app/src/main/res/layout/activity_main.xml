@@ -18,6 +18,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
+    <TextView
+        android:id="@+id/empty_fields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Preencha todos os campos"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/username_login"
+        app:layout_constraintStart_toStartOf="@+id/username_login" />
+
+
     <EditText
         android:id="@+id/username_login"
         android:layout_width="264dp"
