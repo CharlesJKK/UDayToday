@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.udaytoday.databinding.ActivityMainBinding
+import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +36,13 @@ class MainActivity : AppCompatActivity() {
 
         if (usernameField == "" || passwordField == ""){
             errorTxt.visibility = View.VISIBLE
+
+            val executor = Executors.newSingleThreadScheduledExecutor()
+
+            val delay = 3
+            executor.schedule({
+                errorTxt.visibility = View.INVISIBLE
+            }, delay.toLong(), TimeUnit.SECONDS)
             return
         }else{
             val navigationToHome = Intent(this, HomeActivity::class.java)
