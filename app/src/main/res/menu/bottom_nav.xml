@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Seu dia"
+        android:id="@+id/home"
+        android:icon="@drawable/tag_facesicon"/>
+
+    <item android:title="Lembretes"
+        android:id="@+id/reminder"
+        android:icon="@drawable/timericon"/>
+
+    <item android:title="Amigos"
+        android:id="@+id/friends"
+        android:icon="@drawable/peopleicon"/>
+
+    <item android:title="Configurações"
+        android:id="@+id/settings"
+        android:icon="@drawable/menuicon"/>
+</menu>
