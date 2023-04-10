@@ -5,10 +5,9 @@ import android.graphics.Paint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
 import com.example.udaytoday.databinding.ActivityRegisterScreenBinding
 
-class registerScreen : AppCompatActivity() {
+class RegisterScreenActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegisterScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {

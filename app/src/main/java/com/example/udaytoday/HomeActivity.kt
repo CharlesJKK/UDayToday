@@ -13,13 +13,13 @@ class HomeActivity : AppCompatActivity() {
         binding =  ActivityHomeBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        replaceFragmente(Home())
+        replaceFragmente(HomeFragment())
 
         binding.bottomNavigationView.setOnItemSelectedListener {
 
             when(it.itemId){
-                R.id.home -> replaceFragmente(Home())
-                R.id.reminder -> replaceFragmente(Reminder())
+                R.id.home -> replaceFragmente(HomeFragment())
+                R.id.reminder -> replaceFragmente(ReminderFragment())
 
                 else -> {
 

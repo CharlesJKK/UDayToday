@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.registerBtn.setOnClickListener {
-            val navigationToRegister = Intent(this, registerScreen::class.java)
+            val navigationToRegister = Intent(this, RegisterScreenActivity::class.java)
             startActivity(navigationToRegister)
         }
 

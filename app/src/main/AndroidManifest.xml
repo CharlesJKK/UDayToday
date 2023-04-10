@@ -15,7 +15,7 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".registerScreen"
+            android:name=".RegisterScreenActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
